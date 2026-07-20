@@ -1,7 +1,3 @@
-깃허브(GitHub) 레포지토리에 올렸을 때 한눈에 알아보기 쉽고, 포트폴리오로서도 전문성이 돋보이도록 깃허브 스타일 마크다운(`README.md`)으로 재구성했어!
-
-기술 스택 배지(Badges)와 깔끔한 테이블 레이아웃을 적용했으니, 아래 코드 블록 전체를 복사해서 `README.md` 파일에 그대로 붙여넣으면 돼.
-
 ```markdown
 # ⚡ VOLT: AI-Driven Short-form Video Campaign
 > **"액티브한 하루를 위한 2L 네온 에너지, VOLT"**  
