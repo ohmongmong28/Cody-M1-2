@@ -20,10 +20,10 @@
 
 | 단계 | 도구 | 사용 목적 |
 | :--- | :--- | :--- |
-| **기획 & 프롬프트** | <img src="https://img.shields.io/badge/Gemini_3.5_Pro-8E44AD?style=flat-square&logo=google-gemini&logoColor=white"/> | 스토리보드 세부 기획, 이미지/영상 프롬프트 엔지니어링, 카피라이팅 |
-| **영상 생성** | <img src="https://img.shields.io/badge/Kling_AI-FF5722?style=flat-square&logo=ai&logoColor=white"/> | 텍스트 프롬프트 기반 고해상도 액티브 쇼츠 비디오 및 시각 자료 일괄 생성 |
-| **음악 생성** | <img src="https://img.shields.io/badge/SUNO-000000?style=flat-square&logo=suno&logoColor=white"/> | 트렌디하고 에너제틱한 비트의 숏폼 맞춤형 힙합/일렉트로닉 BGM 제작 |
-| **영상 편집** | <img src="https://img.shields.io/badge/CapCut-000000?style=flat-square&logo=capcut&logoColor=white"/> | 트렌디한 트랜지션, 자막 효과, 오디오 싱크 및 최종 영상 빠른 템포 컷편집 |
+| **기획 & 프롬프트** | Gemini | 스토리보드 세부 기획, 이미지/영상 프롬프트 엔지니어링, 카피라이팅 |
+| **영상 생성** | Kling ai, Gemini | 텍스트 프롬프트 기반 고해상도 액티브 쇼츠 비디오 및 시각 자료 일괄 생성 |
+| **음악 생성** | Suno | 트렌디하고 에너제틱한 비트의 숏폼 맞춤형 힙합/일렉트로닉 BGM 제작 |
+| **영상 편집** | Capcut | 트렌디한 트랜지션, 자막 효과, 오디오 싱크 및 최종 영상 빠른 템포 컷편집 |
 
 ---
 
