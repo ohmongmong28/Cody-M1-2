@@ -55,8 +55,6 @@ Extreme macro close-up of a vibrant neon-colored sporty tumbler, crisp freezing 
 * **피사체:** 스포티하고 힙한 스트리트 패션을 한 모델이 2L 대용량 네온 볼트 텀블러를 한 손에 당당하게 들고 카메라를 응시함
 * **배경:** 에너제틱한 무드의 감각적인 테니스 코트 야외 배경
 * **텍스트:** `[좌측 하단] "괴물급 대용량 2L"`
-
-
 * **사용 도구:** Gemini, Kling AI
 * **생성 결과 파일:** `VOLT_SC02_2L_Capacity_v1.mp4`
 
@@ -76,9 +74,7 @@ Low angle medium shot of a trendy, athletic model confidently holding a massive 
 * **피사체:** 볼트 텀블러가 거친 콘크리트 바닥에 강하게 떨어지는 충격의 순간
 * **배경:** 충격으로 먼지가 미세하게 튀지만, 스크래치나 찌러짐 하나 없이 완벽하게 탱글하게 튕겨 나가는 모습
 * **텍스트:** `[좌측 하단] "던져도 안부서져요~"`
-
-
-* **사용 도구:** Kling AI
+* **사용 도구:** Kling AI, Gemini
 * **생성 결과 파일:** `VOLT_SC03_Durability_Drop_v2.mp4`
 
 ```text
@@ -105,7 +101,7 @@ Extreme slow motion, ground-level shot of a neon tumbler aggressively dropping o
 * **텍스트 & 내레이션:** `[중앙 배치] "OOTD 내 맘대로 꾸미는 텀블러!"`
 
 
-* **사용 도구:** Kling AI, CapCut
+* **사용 도구:** Gemini, Kling AI, CapCut
 * **생성 결과 파일:** `VOLT_SC04_Design_Outro_v1.mp4`
 
 ```text
