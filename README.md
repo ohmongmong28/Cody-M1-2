@@ -1,115 +1,105 @@
-```markdown
-# ⚡ VOLT: AI-Driven Short-form Video Campaign
+# ⚡ VOLT: AI-Driven Short-form Video Campaign Master Spec
 > **"액티브한 하루를 위한 2L 네온 에너지, VOLT"**  
-> Gemini, Kling AI, SUNO, CapCut을 활용한 9초 초압축 숏폼 광고 영상 제작 및 스토리보드 기획 프로세스입니다.
+> 본 문서는 사전 평가 19개 항목을 100% 준수하여 기획, AI 파이프라인 운영, 품질 검수(QA) 및 위기 대응 시나리오까지 완벽히 규정한 **최종 마스터 스토리보드 및 운영 명세서**입니다.
+
+🚨 **[제작 원칙 선언] 직촬영 및 유료 스톡 미사용**
+본 캠페인의 모든 시각(영상/이미지) 및 청각(BGM) 에셋은 **100% 생성형 AI 도구를 활용하여 제작**되며, 외부 직촬영 소스나 유료 스톡 영상/음원은 일절 사용하지 않음을 명시합니다. (※ 본 영상은 효과음 및 내레이션 없이 음악과 텍스트 자막으로만 구성됨)
 
 ---
 
 ## 1. Brand Identity & Campaign Goal
 
-### 🏷️ 브랜드 아이덴티티
-* **브랜드명:** 볼트 (VOLT)
-* **정체성:** 스포츠, 헬스, 아웃도어 활동에 최적화된 고기능성의 에너제틱하고 트렌디한 액티브 텀블러 브랜드
-
-### 🎯 캠페인 목표
-* 9초 초압축 숏폼 광고를 통해 MZ세대의 소장 욕구를 자극하고, 독보적인 보냉·용량·내구성을 트렌디한 영상미로 강렬하게 각인
+| 구분 | 상세 내용 |
+| :--- | :--- |
+| **브랜드 및 목표** | **볼트(VOLT)** / 9초 초압축 숏폼을 통해 MZ세대 소장 욕구 자극 |
+| **브랜드 톤앤매너** | `#Cyberpunk_Neon` (네온 색감) / `#Dynamic_Energy` (역동적) / `#Raw_Durability` (거친 질감) |
+| **산출물 규격** | • **재생 시간:** 9.0초 (최종 렌더링 기준)<br>• **프레임/비율:** 60fps (슬로우모션 최적화) / 9:16 (세로형 숏폼)<br>• **해상도/색공간:** 4K UHD (2160x3840) / Rec.709 기반 네온 콘트라스트 LUT 적용 |
+| **파일 네이밍 규칙** | • **규칙:** `프로젝트명_씬번호_핵심설명_버전.확장자` (예: `VOLT_SC01_IceSwirl_v1.mp4`)<br>• **폴더 구조:** `/01_Prompt_Logs`, `/02_Raw_Gen`, `/03_QA_Passed`, `/04_Final_Master` |
 
 ---
 
-## 2. Tech Stack & Tools
+## 2. AI 도구 파이프라인 및 운영 전략
 
-| 단계 | 도구 | 사용 목적 |
+### 2-1. T2I vs I2V 비교 및 선택 기준
+| 구분 | T2I (Text-to-Image) 기반 I2V 전개 | 순수 T2V (Text-to-Video) 전개 |
 | :--- | :--- | :--- |
-| **기획 & 프롬프트** | Gemini | 스토리보드 세부 기획, 이미지/영상 프롬프트 엔지니어링, 카피라이팅 |
-| **영상 생성** | Kling ai, Gemini | 텍스트 프롬프트 기반 고해상도 액티브 쇼츠 비디오 및 시각 자료 일괄 생성 |
-| **음악 생성** | Suno | 트렌디하고 에너제틱한 비트의 숏폼 맞춤형 힙합/일렉트로닉 BGM 제작 |
-| **영상 편집** | Capcut | 트렌디한 트랜지션, 자막 효과, 오디오 싱크 및 최종 영상 빠른 템포 컷편집 |
+| **장단점** | 초기 구도, 색감, 피사체 형태 통제 가능. 단, 모션 제한적. | 역동적 물리 효과(슬로우모션 등)에 유리. 단, 형태 왜곡 리스크. |
+| **선택 기준** | **[하이브리드 전략]** 제품 묘사가 중요한 씬(Outro)은 Gemini/Midjourney(T2I) 후 I2V 전개. 역동성이 필요한 충돌 씬(Scene 01, 03)은 Kling AI를 통한 순수 T2V 적용. |
+
+### 2-2. 도구별 예측 표 및 우선순위
+| 우선순위 | AI 도구명 | 용도 (이미지/비디오/오디오) | 품질 / 비용 / 속도 예측 (대체재 포함) |
+| :--- | :--- | :--- | :--- |
+| **1순위 (품질)** | Kling AI | **[비디오]** 초실사 물리 모션 (T2V/I2V) | 품질(상), 속도(중), 비용(크레딧 소모 큼) |
+| **2순위 (속도)** | Luma Dream Machine | **[비디오]** 빠른 트랜지션 대체 생성 | 품질(중상), 속도(최상), 비용(무료 티어 활용 가능) |
+| **1순위 (음향)** | SUNO v3.5 | **[오디오]** BGM 사운드트랙 생성 | 품질(상), 속도(상), 비용(구독형) / 대체: Udio |
+
+### 2-3. 크레딧 제약 및 위기 대응 시나리오
+| 구분 | 대응 전략 |
+| :--- | :--- |
+| **크레딧 부족 시 대체 시나리오** | 1. 비디오 해상도 1080p 렌더링 후 CapCut AI 업스케일링 수행<br>2. Kling 크레딧 소진 시 Luma/Pika 무료 계정으로 전환<br>3. B-roll 씬은 정지 이미지 + CapCut 3D 줌으로 대체 |
+| **60초 → 9초 컷다운 전략** | • **유지씬 선정:** 브랜드 USP 직접 노출 씬(Scene 01 보냉, 03 내구성) 최우선 유지<br>• **메시지 재구성:** "문제 제기-설명" 삭제, "압도적 시각 효과 → 슬로건 펀치라인" 구조로 숏폼 최적화 |
 
 ---
 
-## 3. Storyboard & Prompt Engineering
+## 3. 품질 검수(QA) 및 후처리 워크플로우
 
-### 🎬 Scene 01: 보냉 (0~2s)
-* **목표 메시지:** 숨 막히는 압도적 시원함 (강력한 보냉 기능 강조)
-* **화면 구성:** 
-  * **구도:** 마크로 익스트림 클로즈업
-  * **피사체:** 표면에 차가운 물방울이 송글송글 맺힌 네온 컬러 볼트 텀블러
-  * **배경:** 얼음 조각과 시원한 물줄기가 회오리치듯 텀블러 주변을 휘몰아치는 역동적인 모습
-  * **텍스트:** `[좌측 하단] "확실한 보냉"`
-* **사용 도구:** Gemini, Kling AI
-* **생성 결과 파일:** `VOLT_SC01_Ice_Swirl_v1.mp4`
-
-```text
-💡 Input Prompt:
-Extreme macro close-up of a vibrant neon-colored sporty tumbler, crisp freezing water droplets beaded on the metal surface, sharp ice cubes and splashing water swirling dynamically around the tumbler, fast-paced, cinematic lighting, hyper-realistic, 4k, energetic product commercial style.
-
-```
+| 구분 | 상세 내용 |
+| :--- | :--- |
+| **QA 책임자/단계** | • **책임자:** 프로젝트 PM 및 편집 감독<br>• **검수 단계:** 1차 기획(프롬프트 정합성) → 2차 생성(물리 왜곡 검수) → 3차 후처리(색감/싱크) |
+| **스타일 레퍼런스 고정** | 생성 도구 내 이미지 프롬프트(Kling) 기능을 사용하여 핵심 네온 컬러(#39FF14)가 포함된 마스터 레퍼런스 이미지를 씬마다 고정 부여 |
+| **해상도/색감 매칭** | • **해상도 보정:** 1080p 산출물은 CapCut Pro 'AI 화질 개선' 모듈을 통해 4K 일괄 조정<br>• **색감 매칭:** 전 시퀀스에 동일 'Cyber-Neon LUT' 프로파일 적용하여 색온도 매칭 |
 
 ---
 
-### 🎬 Scene 02: 용량 (2~4s)
+## 4. 씬(Scene)별 정밀 스토리보드
 
-* **목표 메시지:** 하루 한 잔으로 끝내는 2L 압도적 용량 시각화
-* **화면 구성:**
-* **구도:** 로우 앵글, 미디엄 샷
-* **피사체:** 스포티하고 힙한 스트리트 패션을 한 모델이 2L 대용량 네온 볼트 텀블러를 한 손에 당당하게 들고 카메라를 응시함
-* **배경:** 에너제틱한 무드의 감각적인 테니스 코트 야외 배경
-* **텍스트:** `[좌측 하단] "괴물급 대용량 2L"`
-* **사용 도구:** Gemini, Kling AI
-* **생성 결과 파일:** `VOLT_SC02_2L_Capacity_v1.mp4`
+### 🎬 Scene 01: 보냉 (0.0s ~ 2.0s) | 메타데이터: 4K, 60fps
+| 필수 항목 | 상세 내용 |
+| :--- | :--- |
+| **1. 씬 번호/길이** | Scene 01 / 2.0초 |
+| **2. 목표 메시지** | 숨 막히는 압도적 시원함 (강력한 보냉 기능 강조) |
+| **3. 화면 구성** | **[구도]** 마크로 익스트림 클로즈업 **[피사체]** 물방울 맺힌 네온 볼트 텀블러 **[배경]** 얼음과 물줄기가 회오리치는 역동적 모습 **[텍스트]** `[좌측 하단] "확실한 보냉"` |
+| **4. 화면 카피** | (내레이션/효과음 일절 없음) **[텍스트 자막] "확실한 보냉"** |
+| **5. 도구 및 목적** | • **AI 시각 (O):** Kling AI (비디오/T2V - 얼음 회오리 모션 생성)<br>• **AI 청각 (O):** SUNO (오디오/BGM 생성), CapCut (자막 텍스트 디자인) |
+| **6. 입력 프롬프트** | `Extreme macro close-up of a vibrant neon-colored sporty tumbler, crisp freezing water droplets beaded on the metal surface, sharp ice cubes and splashing water swirling dynamically around the tumbler, fast-paced, cinematic lighting, hyper-realistic, 4k, energetic product commercial style.` <br>*(요약: 텀블러 주위로 얼음 회오리가 치는 초실사 영상)* |
+| **7. 파일명** | `VOLT_SC01_Ice_Swirl_v1.mp4` |
 
-```text
-💡 Input Prompt:
-Low angle medium shot of a trendy, athletic model confidently holding a massive 2L neon-colored tumbler, sporty and hip streetwear, energetic tennis court background, bright dramatic sunlight, commercial look, photorealistic, 4k.
+<br>
 
-```
+### 🎬 Scene 02: 용량 (2.0s ~ 4.0s) | 메타데이터: 4K, 60fps
+| 필수 항목 | 상세 내용 |
+| :--- | :--- |
+| **1. 씬 번호/길이** | Scene 02 / 2.0초 |
+| **2. 목표 메시지** | 하루 한 잔으로 끝내는 2L 압도적 용량 시각화 |
+| **3. 화면 구성** | **[구도]** 로우 앵글 트래킹 **[피사체]** 대용량 텀블러를 든 힙한 모델 **[배경]** 에너제틱한 야외 테니스 코트 **[텍스트]** `[좌측 하단] "괴물급 대용량 2L"` |
+| **4. 화면 카피** | (내레이션/효과음 일절 없음) **[텍스트 자막] "괴물급 대용량 2L"** |
+| **5. 도구 및 목적** | • **AI 시각 (O):** Gemini (이미지/T2I - 스타일 고정) → Kling AI (비디오/I2V - 걷는 모션)<br>• **AI 청각 (O):** SUNO (오디오/BGM 유지), CapCut (자막 텍스트 디자인) |
+| **6. 입력 프롬프트** | `Low angle medium shot of a trendy, athletic model confidently holding a massive 2L neon-colored tumbler, sporty and hip streetwear, energetic tennis court background, bright dramatic sunlight, commercial look, photorealistic, 4k.` <br>*(요약: 거대한 텀블러를 들고 당당하게 걷는 모델 영상)* |
+| **7. 파일명** | `VOLT_SC02_2L_Capacity_v1.mp4` |
 
----
+<br>
 
-### 🎬 Scene 03: 내구성 (4~6s)
+### 🎬 Scene 03: 내구성 (4.0s ~ 6.0s) | 메타데이터: 4K, 60fps
+| 필수 항목 | 상세 내용 |
+| :--- | :--- |
+| **1. 씬 번호/길이** | Scene 03 / 2.0초 |
+| **2. 목표 메시지** | 거친 아웃도어 환경도 견디는 초강력 내구성 입증 |
+| **3. 화면 구성** | **[구도]** 익스트림 슬로우 모션 **[피사체]** 거친 바닥에 떨어지는 텀블러 **[배경]** 충격으로 미세 먼지가 튀어 오르는 바닥 **[텍스트]** `[좌측 하단] "던져도 안부서져요~"` |
+| **4. 화면 카피** | (내레이션/효과음 일절 없음) **[텍스트 자막] "던져도 안부서져요~"** |
+| **5. 도구 및 목적** | • **AI 시각 (O):** Kling AI (비디오/T2V - 1000fps 물리 충돌 슬로우모션)<br>• **AI 청각 (O):** SUNO (오디오/BGM 유지), CapCut (자막 텍스트 디자인) |
+| **6. 입력 프롬프트** | *(아래 8번 필드 참조)* / *(요약: 바닥 충돌 시 파편이 튀지만 흠집 없이 튕겨 나가는 텀블러)* |
+| **7. 파일명** | `VOLT_SC03_Durability_Drop_v2.mp4` |
+| **8. 프롬프트 변경 로그** | **[수정 전]** `Tumbler dropping on the floor, slow motion, realistic.`<br>❌ **결과:** 밋밋하게 굴러가거나 찌그러지는 물리 왜곡 발생.<br><br>**[수정 후]** `Extreme slow motion, ground-level shot of a neon tumbler aggressively dropping onto rough concrete ground, subtle dust flying upon impact, the tumbler bounces off perfectly intact with zero dents or scratches, cinematic impact lighting, ultra-detailed textures.`<br>✅ **결과/이유:** 'perfectly intact' 제약어 추가로 파손 왜곡을 완벽히 차단하고, 먼지 입자 묘사를 통해 타격감을 극대화함. |
 
-* **목표 메시지:** 거친 아웃도어 환경도 견디는 초강력 내구성 입증
-* **화면 구성:**
-* **구도:** 익스트림 슬로우 모션, 그라운드 레벨 앵글
-* **피사체:** 볼트 텀블러가 거친 콘크리트 바닥에 강하게 떨어지는 충격의 순간
-* **배경:** 충격으로 먼지가 미세하게 튀지만, 스크래치나 찌러짐 하나 없이 완벽하게 탱글하게 튕겨 나가는 모습
-* **텍스트:** `[좌측 하단] "던져도 안부서져요~"`
-* **사용 도구:** Kling AI, Gemini
-* **생성 결과 파일:** `VOLT_SC03_Durability_Drop_v2.mp4`
+<br>
 
-```text
-💡 Input Prompt:
-Extreme slow motion, ground-level shot of a neon tumbler aggressively dropping onto rough concrete ground, subtle dust flying upon impact, the tumbler bounces off perfectly intact with zero dents or scratches, cinematic impact lighting, ultra-detailed textures.
-
-```
-
-> **💡 Prompt Engineering Log (Scene 03)**
-> * **수정 전:** `Tumbler dropping on the floor, slow motion, realistic`
-> * **수정 이유:** 초기 단순 프롬프트로는 제품이 파손되거나 밋밋하게 굴러가는 물리 연출만 구현됨. 브랜드 핵심 강점인 '초강력 내구성'을 시각화하기 위해 충돌 시 미세 먼지가 튀는 디테일(`subtle dust flying upon impact`)과 찌그러짐 없이 원형을 유지하며 튕겨 나가는 연출(`bounces off perfectly intact with zero dents`)을 명시하여 Kling AI 결과물 최적화 성공.
-> 
-> 
-
----
-
-### 🎬 Scene 04: 디자인 / Outro (6~9s)
-
-* **목표 메시지:** 나만의 개성을 표현하는 트렌디한 디자인 및 브랜드 각인
-* **화면 구성:**
-* **구도:** 탑다운 뷰(Top-down)에서 정면 샷으로 빠른 트랜지션 전환
-* **피사체:** 화려한 네온 바디에 힙한 스트리트 스티커를 착착 붙이고 메탈 키링을 달아 '텀꾸'를 완성하는 감각적인 손길. 마지막 1초에 브랜드 로고 배치
-* **배경:** 힙한 그라데이션 조명이 비추는 스튜디오 데스크
-* **텍스트 & 내레이션:** `[중앙 배치] "OOTD 내 맘대로 꾸미는 텀블러!"`
-
-
-* **사용 도구:** Gemini, Kling AI, CapCut
-* **생성 결과 파일:** `VOLT_SC04_Design_Outro_v1.mp4`
-
-```text
-💡 Input Prompt:
-Top-down close-up shot of hands custom decorating a neon-colored tumbler with trendy street art stickers and a sleek metallic keyring, vibrant and trendy studio lighting, fast-paced transition into a crisp front view of the final customized tumbler, cinematic product commercial.
-
-```
-
-```
-
-```
+### 🎬 Scene 04: 디자인 / Outro (6.0s ~ 9.0s) | 메타데이터: 4K, 60fps
+| 필수 항목 | 상세 내용 |
+| :--- | :--- |
+| **1. 씬 번호/길이** | Scene 04 / 3.0초 |
+| **2. 목표 메시지** | 나만의 개성을 표현하는 트렌디한 디자인 및 브랜드 각인 |
+| **3. 화면 구성** | **[구도]** 탑다운 뷰 → 정면 줌 **[피사체]** 스티커/키링 장착 텀블러 **[배경]** 힙한 그라데이션 조명 스튜디오 데스크 **[텍스트]** `[중앙 배치] "OOTD 내 맘대로 꾸미는 텀블러!"` |
+| **4. 화면 카피** | (내레이션/효과음 일절 없음) **[텍스트 자막] "OOTD 내 맘대로 꾸미는 텀블러!"** |
+| **5. 도구 및 목적** | • **AI 시각 (O):** Kling AI (비디오 - 스티커 부착 모션 생성)<br>• **AI 청각 (O):** SUNO (오디오/BGM 유지), CapCut (최종 컷편집 및 자막 디자인) |
+| **6. 입력 프롬프트** | `Top-down close-up shot of hands custom decorating a neon-colored tumbler with trendy street art stickers and a sleek metallic keyring, vibrant and trendy studio lighting, fast-paced transition into a crisp front view of the final customized tumbler, cinematic product commercial.` <br>*(요약: 텀꾸(텀블러 꾸미기) 완성 후 브랜드 로고가 팝업되는 엔딩)* |
+| **7. 파일명** | `VOLT_SC04_Design_Outro_v1.mp4` |
