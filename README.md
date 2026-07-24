@@ -16,6 +16,24 @@
 | **산출물 규격** | • **재생 시간:** 9.0초 (최종 렌더링 기준)<br>• **프레임/비율:** 60fps (슬로우모션 최적화) / 9:16 (세로형 숏폼)<br>• **해상도/색공간:** 4K UHD (2160x3840) / Rec.709 기반 네온 콘트라스트 LUT 적용 |
 | **파일 네이밍 규칙** | • **규칙:** `프로젝트명_씬번호_핵심설명_버전.확장자` (예: `VOLT_SC01_IceSwirl_v1.mp4`)<br>• **폴더 구조:** `/01_Prompt_Logs`, `/02_Raw_Gen`, `/03_QA_Passed`, `/04_Final_Master` |
 
+
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/eb3816e6-6056-4353-814f-2349241e8306" />
+<img width="605" height="400" alt="image" src="https://github.com/user-attachments/assets/d6dcd47b-9693-4187-aa89-286d2fd2ed0f" />
+
+| 필수 항목 | 상세 내용 |
+| :--- | :--- |
+| 사용한 모델 | 네이토 이미지 생성 (GPT Image 2) |
+| **v1. 입력 프롬프트** | An everyday, casual photo of a large 2-liter (64oz) neon green water bottle sitting on a messy desk. It has a basic black plastic handle and a flip-top lid with an orange accent. The word 'VOLT' is printed in black slanted block letters on the side. The lighting is simple indoor light, and the overall quality is a snapshot. No studio setting. | 
+| 개선 필요점 | 너무 둔탁하고 생각했던 텀블러의 이미지와 매치가 안되어 프롬프트 개선 후 다시 이미지를 산출해야할 듯함. |
+
+
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/f7de4928-7baf-4fad-90c8-06de401d215c" />
+
+| 필수 항목 | 상세 내용 |
+| :--- | :--- |
+| 사용한 모델 | Gemini 3.1 Pro |
+| **v2. 입력 프롬프트** | A high-resolution, sporty product photography shot of a large 2L (64oz) reusable tumbler on a neutral studio background. The tumbler has a rugged, matte electric neon green body. It features a durable, textured non-slip black handle grip and a secure, flip-top lid with a prominent neon orange accent cap and a built-in straw. On the front, a dynamic, stylized brand logo reads "VOLT" in bold, slanted block letters, with "2L / 64oz" and "DURAFLOW" printed in smaller text below. The overall aesthetic is active, athletic, and durable. Bright, natural lighting highlights the textured surfaces and vibrant neon colors. | 
+
 ---
 
 ## 2. AI 도구 파이프라인 및 운영 전략
