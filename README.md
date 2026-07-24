@@ -82,6 +82,8 @@
 
 <br>
 
+https://github.com/user-attachments/assets/f128fa9c-00d3-400d-825f-2d7b26edd9c3
+
 | 필수 항목 | 상세 내용 |
 | :--- | :--- |
 | **1. 씬 번호/길이** | Scene 01 / 2.0초 |
@@ -106,6 +108,8 @@
 
 <br>
 
+https://github.com/user-attachments/assets/5f875017-24e0-40d6-bcbd-096e88b4e755
+
 | 필수 항목 | 상세 내용 |
 | :--- | :--- |
 | **1. 씬 번호/길이** | Scene 02 / 2.0초 |
@@ -128,6 +132,8 @@
 | **입력 프롬프트** | Slow motion shot of a steel tumbler falling high impact onto a rough concrete ground, bouncing off with zero scratches, high durability, dramatic lighting, gravel splashing, intense commercial ad style. | 
 
 <br>
+
+https://github.com/user-attachments/assets/98fb2966-b665-4294-aeae-ed5f439d13c6
 
 | 필수 항목 | 상세 내용 |
 | :--- | :--- |
@@ -154,6 +160,8 @@
 
 <br>
 
+https://github.com/user-attachments/assets/9ff601d8-6fee-4d50-90df-d45fc9511d83
+
 | 필수 항목 | 상세 내용 |
 | :--- | :--- |
 | **1. 씬 번호/길이** | Scene 04 / 3.0초 |
@@ -164,4 +172,8 @@
 | **6. 입력 프롬프트** | `Top-down close-up shot of hands custom decorating a neon-colored tumbler with trendy street art stickers and a sleek metallic keyring, vibrant and trendy studio lighting, fast-paced transition into a crisp front view of the final customized tumbler, cinematic product commercial.` <br>*(요약: 텀꾸(텀블러 꾸미기) 완성 후 브랜드 로고가 팝업되는 엔딩)* |
 | **7. 파일명** | `VOLT_SC04_Design_Outro_v1.mp4` |
 
+---
 
+## 5. 최종 결과물
+
+https://github.com/user-attachments/assets/bf6eec23-bdc4-4db9-b900-f391fabc3ecc
