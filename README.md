@@ -20,8 +20,8 @@
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/eb3816e6-6056-4353-814f-2349241e8306" />
 <img width="605" height="400" alt="image" src="https://github.com/user-attachments/assets/d6dcd47b-9693-4187-aa89-286d2fd2ed0f" />
 
-| 필수 항목 | 상세 내용 |
-| :--- | :--- |
+| 필수 항목 | 상세 내용                        |
+| :-------- | :-------------------------------- |
 | 사용한 모델 | 네이토 이미지 생성 (GPT Image 2) |
 | **v1. 입력 프롬프트** | An everyday, casual photo of a large 2-liter (64oz) neon green water bottle sitting on a messy desk. It has a basic black plastic handle and a flip-top lid with an orange accent. The word 'VOLT' is printed in black slanted block letters on the side. The lighting is simple indoor light, and the overall quality is a snapshot. No studio setting. | 
 | 개선 필요점 | 너무 둔탁하고 생각했던 텀블러의 이미지와 매치가 안되어 프롬프트 개선 후 다시 이미지를 산출해야할 듯함. |
@@ -31,7 +31,7 @@
 
 | 필수 항목 | 상세 내용 |
 | :--- | :--- |
-| 사용한 모델 | Gemini 3.1 Pro |
+| 사용한 모델 | Gemini 3.1 Pro (Nano Banana 2) |
 | **v2. 입력 프롬프트** | A high-resolution, sporty product photography shot of a large 2L (64oz) reusable tumbler on a neutral studio background. The tumbler has a rugged, matte electric neon green body. It features a durable, textured non-slip black handle grip and a secure, flip-top lid with a prominent neon orange accent cap and a built-in straw. On the front, a dynamic, stylized brand logo reads "VOLT" in bold, slanted block letters, with "2L / 64oz" and "DURAFLOW" printed in smaller text below. The overall aesthetic is active, athletic, and durable. Bright, natural lighting highlights the textured surfaces and vibrant neon colors. | 
 
 ---
@@ -72,6 +72,16 @@
 ## 4. 씬(Scene)별 정밀 스토리보드
 
 ### 🎬 Scene 01: 보냉 (0.0s ~ 2.0s) | 메타데이터: 4K, 60fps
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/1682d9e3-bf77-47aa-a3d5-e987368664ab" />
+
+| 필수 항목 | 상세 내용 |
+| :--- | :--- |
+| 사용한 모델 | Gemini 3.1 Pro (Nano Banana 2) |
+| **입력 프롬프트** | Extreme macro close-up shot of a sleek tumbler, icy condensation and water droplets on the matte surface. Ice cubes bursting and splashing inside crystal clear water, refreshing and ice-cold vibe, commercial studio lighting, slow motion, 4k. | 
+
+<br>
+
 | 필수 항목 | 상세 내용 |
 | :--- | :--- |
 | **1. 씬 번호/길이** | Scene 01 / 2.0초 |
@@ -85,6 +95,17 @@
 <br>
 
 ### 🎬 Scene 02: 용량 (2.0s ~ 4.0s) | 메타데이터: 4K, 60fps
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/6895afe3-d144-48b0-a1cf-c015e0ce9945" />
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/61a747a3-ac0a-4cf1-811d-b21abc8d8613" />
+
+| 필수 항목 | 상세 내용 |
+| :--- | :--- |
+| 사용한 모델 | Gemini 3.1 Pro (Nano Banana 2) |
+| **입력 프롬프트** | Medium shot of a stylish young influencer confidently holding a massive 2L aesthetic tumbler in one hand, smiling, bright modern fitness studio background, hydrated and energetic look, commercial lifestyle ad style, cinematic lighting. | 
+
+<br>
+
 | 필수 항목 | 상세 내용 |
 | :--- | :--- |
 | **1. 씬 번호/길이** | Scene 02 / 2.0초 |
@@ -98,6 +119,16 @@
 <br>
 
 ### 🎬 Scene 03: 내구성 (4.0s ~ 6.0s) | 메타데이터: 4K, 60fps
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/eeac47a1-2d69-40fd-9a2a-c5d4f9b9c8f1" />
+
+| 필수 항목 | 상세 내용 |
+| :--- | :--- |
+| 사용한 모델 | Gemini 3.1 Pro (Nano Banana 2) |
+| **입력 프롬프트** | Slow motion shot of a steel tumbler falling high impact onto a rough concrete ground, bouncing off with zero scratches, high durability, dramatic lighting, gravel splashing, intense commercial ad style. | 
+
+<br>
+
 | 필수 항목 | 상세 내용 |
 | :--- | :--- |
 | **1. 씬 번호/길이** | Scene 03 / 2.0초 |
@@ -112,6 +143,17 @@
 <br>
 
 ### 🎬 Scene 04: 디자인 / Outro (6.0s ~ 9.0s) | 메타데이터: 4K, 60fps
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/d18c8e17-c49e-497d-b36f-0aaafd92b00c" />
+
+
+| 필수 항목 | 상세 내용 |
+| :--- | :--- |
+| 사용한 모델 | Gemini 3.1 Pro (Nano Banana 2) |
+| **입력 프롬프트** | Aesthetic close-up of a trendy pastel-colored tumbler decorated with colorful cute stickers and a jingling keychain, a hand gently placing a new graphic sticker on it, clean minimalist pastel background, viral TikTok style, cozy studio lighting. | 
+
+<br>
+
 | 필수 항목 | 상세 내용 |
 | :--- | :--- |
 | **1. 씬 번호/길이** | Scene 04 / 3.0초 |
@@ -121,3 +163,5 @@
 | **5. 도구 및 목적** | • **AI 시각 (O):** Kling AI (비디오 - 스티커 부착 모션 생성)<br>• **AI 청각 (O):** SUNO (오디오/BGM 유지), CapCut (최종 컷편집 및 자막 디자인) |
 | **6. 입력 프롬프트** | `Top-down close-up shot of hands custom decorating a neon-colored tumbler with trendy street art stickers and a sleek metallic keyring, vibrant and trendy studio lighting, fast-paced transition into a crisp front view of the final customized tumbler, cinematic product commercial.` <br>*(요약: 텀꾸(텀블러 꾸미기) 완성 후 브랜드 로고가 팝업되는 엔딩)* |
 | **7. 파일명** | `VOLT_SC04_Design_Outro_v1.mp4` |
+
+
