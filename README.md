@@ -91,7 +91,7 @@ https://github.com/user-attachments/assets/f128fa9c-00d3-400d-825f-2d7b26edd9c3
 | **3. 화면 구성** | **[구도]** 마크로 익스트림 클로즈업 **[피사체]** 물방울 맺힌 네온 볼트 텀블러 **[배경]** 얼음과 물줄기가 회오리치는 역동적 모습 **[텍스트]** `[좌측 하단] "확실한 보냉"` |
 | **4. 화면 카피** | (내레이션/효과음 일절 없음) **[텍스트 자막] "확실한 보냉"** |
 | **5. 도구 및 목적** | • **AI 시각 (O):** Kling AI (비디오/T2V - 얼음 회오리 모션 생성)<br>• **AI 청각 (O):** SUNO (오디오/BGM 생성), CapCut (자막 텍스트 디자인) |
-| **6. 입력 프롬프트** | `Extreme macro close-up of a vibrant neon-colored sporty tumbler, crisp freezing water droplets beaded on the metal surface, sharp ice cubes and splashing water swirling dynamically around the tumbler, fast-paced, cinematic lighting, hyper-realistic, 4k, energetic product commercial style.` <br>*(요약: 텀블러 주위로 얼음 회오리가 치는 초실사 영상)* |
+| **6. 입력 프롬프트** | `Extreme macro close-up of a vibrant neon-colored sporty tumbler, crisp freezing water droplets beaded on the metal surface, sharp ice cubes and splashing water swirling dynamically around the tumbler, fast-paced, cinematic lighting, hyper-realistic, 4k, energetic product commercial style.` <br> |
 | **7. 파일명** | `VOLT_SC01_Ice_Swirl_v1.mp4` |
 
 <br>
@@ -117,7 +117,7 @@ https://github.com/user-attachments/assets/5f875017-24e0-40d6-bcbd-096e88b4e755
 | **3. 화면 구성** | **[구도]** 로우 앵글 트래킹 **[피사체]** 대용량 텀블러를 든 힙한 모델 **[배경]** 에너제틱한 야외 테니스 코트 **[텍스트]** `[좌측 하단] "괴물급 대용량 2L"` |
 | **4. 화면 카피** | (내레이션/효과음 일절 없음) **[텍스트 자막] "괴물급 대용량 2L"** |
 | **5. 도구 및 목적** | • **AI 시각 (O):** Gemini (이미지/T2I - 스타일 고정) → Kling AI (비디오/I2V - 걷는 모션)<br>• **AI 청각 (O):** SUNO (오디오/BGM 유지), CapCut (자막 텍스트 디자인) |
-| **6. 입력 프롬프트** | `Low angle medium shot of a trendy, athletic model confidently holding a massive 2L neon-colored tumbler, sporty and hip streetwear, energetic tennis court background, bright dramatic sunlight, commercial look, photorealistic, 4k.` <br>*(요약: 거대한 텀블러를 들고 당당하게 걷는 모델 영상)* |
+| **6. 입력 프롬프트** | `Low angle medium shot of a trendy, athletic model confidently holding a massive 2L neon-colored tumbler, sporty and hip streetwear, energetic tennis court background, bright dramatic sunlight, commercial look, photorealistic, 4k.` <br> |
 | **7. 파일명** | `VOLT_SC02_2L_Capacity_v1.mp4` |
 
 <br>
@@ -169,7 +169,7 @@ https://github.com/user-attachments/assets/9ff601d8-6fee-4d50-90df-d45fc9511d83
 | **3. 화면 구성** | **[구도]** 탑다운 뷰 → 정면 줌 **[피사체]** 스티커/키링 장착 텀블러 **[배경]** 힙한 그라데이션 조명 스튜디오 데스크 **[텍스트]** `[중앙 배치] "OOTD 내 맘대로 꾸미는 텀블러!"` |
 | **4. 화면 카피** | (내레이션/효과음 일절 없음) **[텍스트 자막] "OOTD 내 맘대로 꾸미는 텀블러!"** |
 | **5. 도구 및 목적** | • **AI 시각 (O):** Kling AI (비디오 - 스티커 부착 모션 생성)<br>• **AI 청각 (O):** SUNO (오디오/BGM 유지), CapCut (최종 컷편집 및 자막 디자인) |
-| **6. 입력 프롬프트** | `Top-down close-up shot of hands custom decorating a neon-colored tumbler with trendy street art stickers and a sleek metallic keyring, vibrant and trendy studio lighting, fast-paced transition into a crisp front view of the final customized tumbler, cinematic product commercial.` <br>*(요약: 텀꾸(텀블러 꾸미기) 완성 후 브랜드 로고가 팝업되는 엔딩)* |
+| **6. 입력 프롬프트** | `Top-down close-up shot of hands custom decorating a neon-colored tumbler with trendy street art stickers and a sleek metallic keyring, vibrant and trendy studio lighting, fast-paced transition into a crisp front view of the final customized tumbler, cinematic product commercial.` <br> |
 | **7. 파일명** | `VOLT_SC04_Design_Outro_v1.mp4` |
 
 ---
