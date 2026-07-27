@@ -42,7 +42,7 @@
 | 우선순위 | AI 도구명 | 용도 (이미지/비디오/오디오) | 품질 / 비용 / 속도 예측 (대체재 포함) |
 | :--- | :--- | :--- | :--- |
 | **1순위 (품질)** | Gemini | **[비디오]** 초실사 물리 모션 (T2V/I2V) | 품질(상), 속도(중), 비용(크레딧 소모 큼) |
-| **2순위 (속도)** | Luma Dream Machine | **[비디오]** 빠른 트랜지션 대체 생성 | 품질(중상), 속도(최상), 비용(무료 티어 활용 가능) |
+| **2순위 (속도)** | Luma Ai | **[비디오]** 빠른 트랜지션 대체 생성 | 품질(중상), 속도(최상), 비용(무료 티어 활용 가능) |
 | **1순위 (음향)** | SUNO v3.5 | **[오디오]** BGM 사운드트랙 생성 | 품질(상), 속도(상), 비용(구독형) / 대체: Udio |
 
 ### 2-3. 크레딧 제약 및 위기 대응 시나리오
@@ -84,7 +84,7 @@ https://github.com/user-attachments/assets/f128fa9c-00d3-400d-825f-2d7b26edd9c3
 | **2. 목표 메시지** | 숨 막히는 압도적 시원함 (강력한 보냉 기능 강조) |
 | **3. 화면 구성** | **[구도]** 마크로 익스트림 클로즈업 **[피사체]** 물방울 맺힌 네온 볼트 텀블러 **[배경]** 얼음과 물줄기가 회오리치는 역동적 모습 **[텍스트]** `[좌측 하단] "확실한 보냉"` |
 | **4. 화면 카피** | (내레이션/효과음 일절 없음) **[텍스트 자막] "확실한 보냉"** |
-| **5. 도구 및 목적** | • **AI 시각 (O):** Gemini (비디오/I2V - 얼음 회오리 모션 생성)<br>• **AI 청각 (O):** SUNO (오디오/BGM 생성), |
+| **5. 도구 및 목적** | • **AI 시각 (O):** Kling Ai (비디오/I2V - 얼음 회오리 모션 생성)<br>• **AI 청각 (O):** SUNO (오디오/BGM 생성), |
 | **6. 입력 프롬프트** | `Extreme macro close-up of a vibrant neon-colored sporty tumbler, crisp freezing water droplets beaded on the metal surface, sharp ice cubes and splashing water swirling dynamically around the tumbler, fast-paced, cinematic lighting, hyper-realistic, 4k, energetic product commercial style.` <br> |
 | **7. 파일명** | `VOLT_SC01_Ice_Swirl_v1.mp4` |
 | **8. AI모델 선택 이유** | 물과 얼음이 회오리치는 액체(Fluid)의 역동적인 움직임과, 텀블러 표면에 맺힌 미세한 물방울 질감을 동시에 뭉개짐 없이 표현해야 했습니다. Gemini는 유체의 물리적 움직임을 렌더링하면서도, 금속 표면의 매트한 질감과 네온 컬러의 빛 반사를 잃지 않고 극사실적으로 묘사하는 디테일 유지력이 가장 뛰어나기 때문에 이 씬의 메인 도구로 선택했습니다. |
